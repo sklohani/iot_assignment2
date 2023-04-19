@@ -21,7 +21,7 @@ def read_store():
         print(res.json())
         msg = f"Humidity: {res.json()['humidity']} | Temperature: {res.json()['temperature']}"
     except:
-        msg = "ERR! Can't store data."
+        msg = "ERR! Can't store data; Server not running."
         print(msg)
     
     return msg
@@ -34,7 +34,7 @@ def getDB():
         msg = res.json()
         print(msg)
     except:
-        msg = "ERR! Can't fetch data."
+        msg = "ERR! Can't fetch data; Server not running."
         print(msg)
     
     return msg

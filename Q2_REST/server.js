@@ -1,5 +1,3 @@
-// Refer: https://www.bezkoder.com/node-js-rest-api-express-mysql/
-
 // Test API
 // curl -i -X POST "http://127.0.0.1:8080/api/dht11" -H "accept: */*" -H "Content-Type: application/json" -d "{\"humidity\": 52, \"temperature\": 29}"
 

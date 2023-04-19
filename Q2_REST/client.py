@@ -1,4 +1,4 @@
-# import Adafruit_DHT
+import Adafruit_DHT
 from time import sleep
 import requests
 
@@ -6,9 +6,7 @@ address = "http://127.0.0.1:8080/api/dht11"
 
 def read_DHT():
     while True:
-        # humidity, temperature = Adafruit_DHT.read_retry(11, 4)
-        humidity = 46
-        temperature = 29
+        humidity, temperature = Adafruit_DHT.read_retry(11, 4)
 
         print("Humidity: " + str(humidity) + " | Temperature: " + str(temperature))
 

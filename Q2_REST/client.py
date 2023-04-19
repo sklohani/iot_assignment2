@@ -15,7 +15,7 @@ def read_DHT():
             'temperature': temperature
         }
 
-        print("Sending Payload!")
+        print("Sending Data!")
         try:
             res = requests.post(address, data=payload)
 
@@ -23,7 +23,7 @@ def read_DHT():
         except (KeyboardInterrupt):
             break
         except:
-            print("ERR! Can't publish data.")
+            print("ERR! Can't send data: Server not running.")
             
         sleep(20)
 

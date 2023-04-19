@@ -1,7 +1,7 @@
 const DHT11 = require("../models/dht11.model.js");
 
 exports.create = (req, res) => {
-    console.log("New Connection!");
+    console.log("New Incoming!");
 
     if (!req.body) {
         res.status(400).send({
